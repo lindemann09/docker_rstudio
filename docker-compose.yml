@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  rstudio:
+    restart: always
+    image: rocker/tidyverse
+    ports:
+      - 8787:8787
+    environment:
+      USER: oliver
+      PASSWORD: XXXXX
+    volumes:
+      - ./data:/home/oliver
