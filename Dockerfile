@@ -5,6 +5,7 @@ EXPOSE 8787
 RUN apt-get update -y && \
 	apt-get install -y \ 
 		curl \
+		htop \
 		jags \
 		zsh \
 		awscli \
