@@ -20,5 +20,6 @@ remove: stop
 install_docker:
 	sudo apt update -y && sudo apt upgrade -y ;\
 	sudo apt install docker -y ;\
+	sleep 3 ;\
 	sudo gpasswd -a ${USER} docker ;\
 	echo "PLEASE LOG OUT AND IN AGAIN."
